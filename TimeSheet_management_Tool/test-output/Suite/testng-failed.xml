@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="TestScript.InvalidLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="BeforeTest"/>
+          <include name="BeforeSuit"/>
+          <include name="invalidLogin"/>
+        </methods>
+      </class> <!-- TestScript.InvalidLoginTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test4(failed)">
+    <classes>
+      <class name="TestScript.CreateCustomerandProjectTest">
+        <methods>
+          <include name="createCustomerAndProject"/>
+          <include name="setUp"/>
+          <include name="BeforeTest"/>
+          <include name="BeforeSuit"/>
+        </methods>
+      </class> <!-- TestScript.CreateCustomerandProjectTest -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="TestScript.CreateUserTest">
+        <methods>
+          <include name="createNewUser" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="BeforeTest"/>
+          <include name="BeforeSuit"/>
+        </methods>
+      </class> <!-- TestScript.CreateUserTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
